@@ -20,9 +20,9 @@ Roughly, we want:
 
 // Nope
 .foo {
-		display: block; overflow: hidden;
+	display: block; overflow: hidden;
 
-		padding: 0 1em;
+	padding: 0 1em;
 }
 ```
 
@@ -50,9 +50,9 @@ Illustration:
 // Nope
 .foo,
 .foo-bar, .baz {
-		display: block;
-		overflow: hidden;
-		margin: 0 auto }
+	display: block;
+	overflow: hidden;
+	margin: 0 auto }
 ```
 
 Adding to those CSS-related guidelines, we want to pay attention to:
@@ -130,12 +130,12 @@ Here's an example of ordering by type:
 ```
 
 ### Selector Nesting
-Avoid selector nesting as much as possible. The [@at-root](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#at-root) directive can be used to reduce nesting while still keeping rules in logical order.
+Avoid selector nesting as much as possible. The [@at-root](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#at-root) directive can be used to reduce nesting while still keeping rules in logical placement.
 
 ## Architecture
 One of the main benefits of using a CSS preprocessor is having the ability to split the codebase over several files without impacting performance (like the `@import` CSS directive would do). Thanks to Sass’s overload of the `@import` directive, it is perfectly safe (and actually recommended) to use as many files as necessary in development, all compiled into a single stylesheet when going to production.
 
-On top of that, I cannot stress enough the need for folders, even on small scale projects. At home, you don’t drop every sheet of paper into the same box. You use folders; one for the house/flat, one for the bank, one for bills, and so on. There is no reason to do otherwise when structuring a CSS project. Split the codebase into meaningful separated folders so it is easy to find stuff later when you have to come back to the code
+On top of that, I cannot stress enough the need for folders, even on small scale projects. At home, you don’t drop every sheet of paper into the same box. You use folders; one for the house/flat, one for the bank, one for bills, and so on. There is no reason to do otherwise when structuring a CSS project. Split the codebase into meaningful separated folders so it is easy to find stuff later when you have to come back to the code.
 
 ### Components
 Components can be anything, as long as they:
@@ -235,9 +235,9 @@ $breakpoints: (
 );
 ```
 
-See [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862) for why our breakpoints aren't based on specific device sizes (320px, 768px, 1024px, etc..).
+See [The 100% Correct Way to do CSS Breakpoints](https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862) for why our breakpoints aren't based on specific device sizes (320px, 768px, 1024px, etc..).
 
-Additionally, if using a combination of min-width and max-width media queries, beware of the edge case where the browser's current zoom state could cause it to be in-between the breakpoints.
+Additionally, if using a combination of `min-width` and `max-width` media queries, beware of the edge case where the browser's current zoom state could cause it to be in-between the breakpoints.
 
 ```
 // Yep
@@ -256,7 +256,7 @@ $breakpoints: (
 );
 ```
 
-As a best practice, media queries should be mobile-first and avoid mixing min-width and max-width.
+Or even better, your media queries should be mobile-first and avoid mixing `min-width` and `max-width`.
 
 ## Extend
 In short, don't use the `@extend` directive. A more nuanced opinion is that you can use it as long as you fully understand the side effects of it's usage (bloat being the major one) and mitigate it accordingly.
