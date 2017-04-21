@@ -14,7 +14,7 @@
 - Void elements are not closed
 - Linked JS files do not unnecessarily block parsing the rest of the page. `asyc` and `defer` attributes are used
 
-## CSS/SASS
+## CSS/Sass
 - Indented with tabs as opposed to spaces and indentation is consistent
 - Lines are mostly 80-characters wide or less
 - Rules are properly written, multi-line
