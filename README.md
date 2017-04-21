@@ -8,6 +8,8 @@ Use tabs instead of spaces. Tabs have a few advantages.
 - Their apparent width can be adjusted based on user preferences (they can appear to be the equivalent of 2 or 4 spaces)
 - They require less key presses to navigate around a file (one hit of the arrow key instead of 2 or 4).
 
+For CSS, SASS, and JS files, lines should be 80-characters wide or less. For HTML files, line-breaks should be added logically, not to keep line lengths below 80 characters. The developer can toggle word wrap in their code editor to visually wrap lines to avoid horizontal scrolling.
+
 Each project should include a workplace settings config file that the developer can use install in their code editor of choice to keep the project formatting consistent.
 [insert links to config files for VSCode and Atom]
 
@@ -20,47 +22,10 @@ See the [CSS Overview document](css/01_overview.md)
 ## Sass
 See the [Sass Overview document](sass/01_overview.md)
 
-### Syntax and Formatting
-
-Sass files should be broken out logically into components and imported into one main.scss file.
-
 ## JS
 
 ## Images
-Don't use unnecessarry images.
-
-Handle design elements with CSS. Many icons can be generated with unicode characters. Menu hamburger icons can be created with pseudo elements and have the advantage of being animatable. Arrows and carets can be created with borders.
-
-If you have to use an image, use an SVG when possible. Optimize your SVGs in your build process or by using [SVG OMG](https://jakearchibald.github.io/svgomg/)
-
-If you have to use an image and it can't be SVG, optimize it in your build process, manually with command line tools or with an app like [ImageOptim](https://imageoptim.com/mac) for Mac or [something similar for Windows](https://imageoptim.com/versions.html#windows).
-
-### A note on backgrounds images and responsive design
-
-If you include a background image in your CSS and then override it with another background image in a media query, both background image files will be downloaded by the browser. As a best practice you should wrap each background image in a media query.
-```
-// In desktop view, browser will download both images
-body {
-    background-image: src(../img/body-bg_mobile.jpg);
-}
-@media only screen and (min-width: 768px) {
-	body {
-		background-image: src(../img/body-bg_desktop.jpg);
-	}
-}
-
-// Browser will only download the appropriate image, regardless of screen size
-@media only screen and (max-width: 767.99px) {
-	body {
-		background-image: src(../img/body-bg_mobile.jpg);
-	}
-}
-@media only screen and (min-width: 768px) {
-	body {
-		background-image: src(../img/body-bg_desktop.jpg);
-	}
-}
-```
+See the [Images Overview document](images/01_overview.md)
 
 ## Git best practices
 
