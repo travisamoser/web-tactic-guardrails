@@ -1,14 +1,17 @@
 # CSS
-Use Sass (SCSS) syntax. See the [Sass section](sass/01_overview.md) for details on Sass guardrails.
+Use a Sass preprocessor (SCSS syntax) to buid your CSS. See the [Sass section](sass/01_overview.md) for details on the Sass guardrails.
 
+## Linting
 CSS files should be linted with [CSSLint](https://www.npmjs.com/package/csslint) as an integrated part of the site build process. See the CSSLint configuration file for recommended settings. *Add config file
 
 ## Syntax and formatting
 Roughly, we want:
 - tabs, not spaces;
+- consistent indentation
 - ideally, 80-characters wide lines;
 - properly written multi-line CSS rules;
-- meaningful use of whitespace.
+- meaningful use of whitespace;
+- no commented-out code.
 
 ```
 // Yep

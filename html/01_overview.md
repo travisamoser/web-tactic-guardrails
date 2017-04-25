@@ -1,5 +1,13 @@
 # HTML
 
+## Syntax and formatting
+Roughly, we want:
+- tabs, not spaces;
+- nested tags are indented consistently;
+- meaningful use of whitespace;
+- no commented-out code.
+
+## Linting
 HTML code should be linted against [HTMLHint](https://www.npmjs.com/package/htmlhint). This tool should be incorporated into the build process with this config file (link config file).
 
 In addition to HTMLHint, the following standards should be followed. Source: [Linting HTML using CSS](https://bitsofco.de/linting-html-using-css/)
@@ -11,7 +19,7 @@ Don't use inline styles. They are difficult to maintain and make responsive desi
 Specify a document language with the `<html>` tag's `lang` attribute:
 ```
 <html lang="en">
-<!-- Or to specify a country code too -->
+<!-- To specify a country code too -->
 <html lang="en-US">
 ```
 
@@ -36,7 +44,7 @@ Interactive elements like links or buttons are typically labelled by their conte
 ```
 <!-- Yep -->
 <script src="_assets/js/main.js"></script>
-<link href="/_assets/css/main.css">
+<link rel="stylesheet" href="/_assets/css/main.css">
 
 <!-- Nope -->
 <script type="text/javascript" src="_assets/js/main.js"></script>
