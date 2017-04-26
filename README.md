@@ -3,7 +3,7 @@
 Instructions for the feeding and care of your web tactic project.
 
 ## The Golden Rule
-Do unto others as you would have them do unto you--Leave your code in such a state as you would have others leave their code for you.
+Leave your code the state you would have others leave their code for you.
 
 ## General formatting
 
