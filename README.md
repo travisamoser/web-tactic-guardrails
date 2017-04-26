@@ -37,12 +37,14 @@ See the [CSS Overview document](css/01_overview.md)
 ### Sass
 See the [Sass Overview document](sass/01_overview.md)
 
-### JS
+### JavaScript
+See the [JavaScript Overview document](js/01_overview.md)
 
 ### Images
 See the [Images Overview document](images/01_overview.md)
 
 ### Git
+See the [Git](git/01_overview.md)
 
 ### Build process
 
