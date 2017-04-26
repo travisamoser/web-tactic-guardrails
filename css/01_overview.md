@@ -201,5 +201,4 @@ a:hover {
 - Background Shorthand
 - Duplicated Key Selectors
 - Classes in Wrong Components
-- Non BEM
 - `@import`

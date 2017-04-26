@@ -36,6 +36,21 @@
 - Images linked in CSS files are scoped to appropriate media queries
 - Transitions are used on hover and focus of links and buttons
 - "Code Smells" are not detected
+ - Undoing Styles
+ - Magic Numbers
+ - Qualified Selectors
+ - Absolute Values
+ - Brute Forcing
+ - Dangerous Selectors
+ - Reactive !important
+ - IDs
+ - Loose Class Names
+ - @extend
+ - String Concatenation for Classes
+ - Background Shorthand
+ - Duplicated Key Selectors
+ - Classes in Wrong Components
+ - `@import`
 - CSS files are combined and minified in final build
 
 ## JS
