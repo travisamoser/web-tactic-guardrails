@@ -1,4 +1,4 @@
-# JS
+# JavaScript
 
 ## Syntax and formatting
 Roughly, we want:
@@ -17,4 +17,3 @@ CSS files should be linted with [JSHint](https://www.npmjs.com/package/jshint) a
 [AirBNB ES6 Styleguide](https://github.com/airbnb/javascript)
 
 **Should we be using ES6 and ESLint? Babel for pre-processor? Or should we just stick with ES5 for now?**
-

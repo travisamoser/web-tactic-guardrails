@@ -8,7 +8,7 @@ Roughly, we want:
 - no commented-out code.
 
 ## Linting
-HTML code should be linted against [HTMLHint](https://www.npmjs.com/package/htmlhint). This tool should be incorporated into the build process with this config file (link config file).
+HTML code should be linted against [HTMLHint](https://www.npmjs.com/package/htmlhint). This package should be incorporated into the build process. (Link to HTMLHint config file)
 
 In addition to HTMLHint, the following standards should be followed. Source: [Linting HTML using CSS](https://bitsofco.de/linting-html-using-css/)
 

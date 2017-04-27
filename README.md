@@ -3,7 +3,7 @@
 Instructions for the feeding and care of your web tactic project.
 
 ## The Golden Rule
-Leave your code the state you would have others leave their code for you.
+Leave your code in the state you would have others leave their code for you.
 
 ## General formatting
 
@@ -13,18 +13,28 @@ Use tabs instead of spaces. Tabs have a few advantages.
 - Their apparent width can be adjusted based on user preferences (they can appear to be the equivalent of 2 or 4 spaces)
 - They require less key presses to navigate around a file (one hit of the arrow key instead of 2 or 4).
 
+### Editor Config File
+Each project includes an `.editorconfig` to keep the project formatting consistent.
+[The standard .editorconfig file can be found here](/.editorconfig)
+
+In order to use the `.editorconfig` file, you may need to install a plugin. Check [http://editorconfig.org/#download](http://editorconfig.org/#download) to see if a plugin is required for your code editor.
+
+The `editorconfig` file enforces the following rules:
+- Unix-style newlines;
+- a newline ending every file;
+- trim trailing whitespace;
+- tabs (not spaces) for indentation by default;
+- indent size of 2;
+- `package.json` and `travis.yml` have an override of spaces for indentation.
+
 ### Commented-Out Code
 Don't commit commented-out code that you are "saving just in case." That's what version control is for. If you need it, you can just pull your old code from the repo's history.
 
 ### Line-length
-For CSS, SASS, and JS files, lines should be 80-characters wide or less. For HTML files, line-breaks should be added logically, not to keep line lengths below 80 characters. The developer can toggle word wrap in their code editor to visually wrap lines to avoid horizontal scrolling.
+For CSS, SASS, and JS files, lines should be 80-characters wide or less. For HTML files, line-breaks should be added logically, not to keep line lengths below 80 characters. Never add line-breaks inside of tags. If desired, the developer can toggle word wrap in their code editor to avoid horizontal scrolling.
 
 ### Minification
 Generally files should be minified to remove whitespace resulting in reduced file size. Code should not be obfuscated or compressed in such a way as to modify the code. In the final build, CSS and JS files should be minified and (where it makes sense) combined. HTML files should be minified in the final build. This should be a part of the build process--not done manually.
-
-## Workspace Config File
-Each project should include a workplace settings config file that the developer can use install in their code editor of choice to keep the project formatting consistent.
-[insert links to config files for VSCode and Atom]
 
 ## Topics
 
@@ -44,7 +54,7 @@ See the [JavaScript Overview document](js/01_overview.md)
 See the [Images Overview document](images/01_overview.md)
 
 ### Git
-See the [Git](git/01_overview.md)
+See the [Git Overview document](git/01_overview.md)
 
 ### Build process
 
