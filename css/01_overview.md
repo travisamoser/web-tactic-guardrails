@@ -11,9 +11,10 @@ Roughly, we want:
 - ideally, 80-characters wide lines;
 - properly written multi-line CSS rules;
 - meaningful use of whitespace;
-- no commented-out code.
+- no commented-out code;
+- no dead code (unused code).
 
-```
+```css
 // Yep
 .foo {
 	display: block;
@@ -41,7 +42,7 @@ At this point, this is mostly revising what everybody knows, but here is how a C
 - a new line after the closing brace }.
 
 Illustration:
-```
+```css
 // Yep
 .foo, .foo-bar,
 .baz {
@@ -67,7 +68,7 @@ Concretely, there are two factions here:
 Order declarations based on type, not alphabetically. Alphabetal ordering separates properties that are logically linked (height and width, margins and padding, etc...)
 
 Here's an example of ordering by type:
-```
+```css
 .selector {
 	/* Display & Positioning */
 	display: block;
@@ -88,7 +89,6 @@ Here's an example of ordering by type:
 	width: 100px;
 	height: 100px;
 	overflow: hidden;
-	background: #000;
 
 	/* Color & Text */
 	color: #fff;
@@ -97,7 +97,8 @@ Here's an example of ordering by type:
 	line-height: 1.4;
 	text-align: right;
 
-	/* Other */
+	/* Background, Other */
+	background: #000;
 	cursor: pointer;
 }
 ```
@@ -113,7 +114,7 @@ So please, do keep using Normalize.css. It makes your life easier, and with an a
 
 ## Box-sizing fix
 Box sizing is set universally to `border-box`. See [Box Sizing](https://css-tricks.com/box-sizing/#article-header-id-6)
-```
+```css
 html {
 	box-sizing: border-box;
 }
@@ -130,7 +131,7 @@ In general, don't use the CSS shorthand properties because it often unsets other
 
 ## Line-height is unitless
 [Line-Height is Unitless](http://allthingssmitty.com/2017/01/30/nope-nope-nope-line-height-is-unitless/)
-```
+```css
 /* Yep */
 .selector {
 	line-height: 1.2;
@@ -145,7 +146,7 @@ In general, don't use the CSS shorthand properties because it often unsets other
 ## A note on backgrounds images and responsive design
 
 If you include a background image in your CSS and then override it with another background image in a media query, both background image files will be downloaded by the browser. If you need separate background images for different displays, as a best practice you should wrap each background image in a media query.
-```
+```css
 /* In desktop view, browser will download both images */
 body {
     background-image: src(../img/body-bg_mobile.jpg);
@@ -171,7 +172,7 @@ body {
 
 ## Transition links and buttons on hover and focus
 Transition [animatible properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) of links and buttons on hover and focus. This creates a less jarring experience for the user.
-```
+```css
 a {
 	color: #337ab7;
 	transition: color 0.2s ease-in-out;

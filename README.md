@@ -25,10 +25,13 @@ The `editorconfig` file enforces the following rules:
 - trim trailing whitespace;
 - tabs (not spaces) for indentation by default;
 - indent size of 2;
-- `package.json` and `travis.yml` have an override of spaces for indentation.
+- markdown, `package.json`, and `travis.yml` files have an override of spaces for indentation.
 
 ### Commented-Out Code
 Don't commit commented-out code that you are "saving just in case." That's what version control is for. If you need it, you can just pull your old code from the repo's history.
+
+### Dead Code
+Committed code should not contain any dead code (unused code). If you remove a page, component, or feature from a site, remove it's associated CSS/SASS and JavaScript as well.
 
 ### Line-length
 For CSS, SASS, and JS files, lines should be 80-characters wide or less. For HTML files, line-breaks should be added logically, not to keep line lengths below 80 characters. Never add line-breaks inside of tags. If desired, the developer can toggle word wrap in their code editor to avoid horizontal scrolling.

@@ -1,4 +1,4 @@
-# Web Tactic Checklist
+# Web Tactic Code Review Checklist
 
 ## HTML
 - Indented with tabs as opposed to spaces
@@ -6,7 +6,7 @@
 - White space is used meaningfully
 - No commented-out code
 - Passes HTMLhint tests
-- Inline styles are genrally not used
+- Inline styles are generally not used
 - Document language is specified
 - Character encoding is specified and immediately after `<head>` tag
 - Unaccessible viewport attributes are avoided
@@ -16,7 +16,7 @@
 - Deprecated `type` attribute is not included on `<script>` and `<link>` elements
 - Void elements are not closed
 - Linked JS files do not unnecessarily block parsing the rest of the page. `asyc` and `defer` attributes are used
-- HTML files are minified in final build
+- HTML files are minified in the final build
 
 ## CSS/Sass
 - CSS is built from SASS files (SCSS syntax)
@@ -36,31 +36,31 @@
 - Images linked in CSS files are scoped to appropriate media queries
 - Transitions are used on hover and focus of links and buttons
 - "Code Smells" are not detected
- - Undoing Styles
- - Magic Numbers
- - Qualified Selectors
- - Absolute Values
- - Brute Forcing
- - Dangerous Selectors
- - Reactive !important
- - IDs
- - Loose Class Names
- - @extend
- - String Concatenation for Classes
- - Background Shorthand
- - Duplicated Key Selectors
- - Classes in Wrong Components
- - `@import`
-- CSS files are combined and minified in final build
+  - Undoing Styles
+  - Magic Numbers
+  - Qualified Selectors
+  - Absolute Values
+  - Brute Forcing
+  - Dangerous Selectors
+  - Reactive !important
+  - IDs
+  - Loose Class Names
+  - @extend
+  - String Concatenation for Classes
+  - Background Shorthand
+  - Duplicated Key Selectors
+  - Classes in Wrong Components
+  - `@import`
+- CSS files are combined and minified in the final build
 
 ## JS
 - Indented with tabs as opposed to spaces and indentation is consistent
 - no commented-out code
 - Lines are mostly 80-characters wide or less
-- JS files are combined and minified in final build
+- JS files are combined and minified in the final build
 
 ## Images
 - CSS to handle design elements (icons, arrows, carets) as opposed to images
 - SVGs have been optimized with SVGOMG
-- PNGs and JPEGs have been optimized with ImageOptim or something else
+- PNGs and JPEGs have been optimized outside of Photoshop with ImageOptim or something else
 - No orphans

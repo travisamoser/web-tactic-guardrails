@@ -13,7 +13,7 @@ Adding to the CSS guidelines, we want to pay attention to:
 - no new line before a closing brace (}).
 
 Illustration:
-```
+```css
 .foo, .foo-bar,
 .baz {
 	$length: 42em;
@@ -61,7 +61,7 @@ Ideally, components should exist in their own Sass partial (within the `componen
 A component partial can include component-specific variables, placeholders, and even mixins and functions. Keep in mind, though, that you should avoid referencing (i.e. `@import`-ing) component files from other component files, as this can make your project’s dependency graph an unmaintainable tangled mess.
 
 Here is an example of a button component partial:
-```
+```css
 // Button-specific variables
 $button-color: $secondary-color;
 
@@ -124,7 +124,7 @@ See [The 7-1 Pattern Section of Sass Guidelines](https://sass-guidelin.es/#the-7
 ## Responsive Web Design and breakpoints
 Breakpoints should not be named after devices but something more general.
 
-```
+```css
 // Yep
 $breakpoints: (
 	'medium': (min-width: 800px),
@@ -144,7 +144,7 @@ See [The 100% Correct Way to do CSS Breakpoints](https://medium.freecodecamp.com
 
 Additionally, if using a combination of `min-width` and `max-width` media queries, beware of the edge case where the browser's current zoom state could cause it to be in-between the breakpoints.
 
-```
+```css
 // Yep
 $breakpoints: (
 	'small': (max-width: 799.99px),
@@ -162,6 +162,9 @@ $breakpoints: (
 ```
 
 Or even better, your media queries should be mobile-first and avoid mixing `min-width` and `max-width`.
+
+## Sass's media query duplication problem
+Consider structuring your components to use mixins to [solve Sass's media query duplication problem and enhance your workflow](https://medium.com/front-end-developers/the-solution-to-media-queries-in-sass-5493ebe16844)
 
 ## Extend
 In short, don't use the `@extend` directive. A more nuanced opinion is that you can use it as long as you fully understand the side effects of it's usage (bloat being the major one) and mitigate it accordingly.

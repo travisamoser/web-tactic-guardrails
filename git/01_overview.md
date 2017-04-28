@@ -7,6 +7,21 @@ Generally, we use the [Feature Branch Workflow](https://www.atlassian.com/git/tu
 
 See Atlassian's [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) documentation for more details.
 
+## Feature branch naming standards
+Features should be named by one of the following standards
+- `feature/XXXXXXX` (for features)
+- `fix/XXXXXXX` (for bug fixes)
+- `refactor/XXXXXXX` (for refactoring or cleanup)
+
+## Issue mentions
+Use [issue mentions](https://github.com/blog/831-issues-2-0-the-next-generation) to integrate your issues and commit messages. You can also close issues with commit messages. The following keywords will close issues when used in commit messages:
+- `fixes #xxx`
+- `fixed #xxx`
+- `fix #xxx`
+- `closes #xxx`
+- `close #xxx`
+- `closed #xxx`
+
 ## How to Write a Git Commit Message
 
 ### The seven rules of a great Git commit message
@@ -19,3 +34,6 @@ See Atlassian's [Feature Branch Workflow](https://www.atlassian.com/git/tutorial
 7. Use the body to explain what and why vs. how
 
 For more details, see [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
+
+## Merging feature branches and code reviews
+Developers should not merge their own feature branches into `develop`. Instead, they should notify another developer who will merge the branch into `develop` after completing a code review of the branch.

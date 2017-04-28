@@ -6,14 +6,18 @@ Roughly, we want:
 - consistent indentation
 - ideally, 80-characters wide lines;
 - meaningful use of whitespace;
-- no commented-out code.
+- no commented-out code;
+- no dead code (unused code).
 
 ## Linting
-CSS files should be linted with [JSHint](https://www.npmjs.com/package/jshint) as an integrated part of the site build process. See the JSHint configuration file for recommended settings. *Add config file
+JavaScript files should be linted with [JSHint](https://www.npmjs.com/package/jshint) and [ESLint](https://www.npmjs.com/package/eslint) as an integrated part of the site build process. See the JSHint and ESLint configuration files for recommended settings. *Add links to config files
+
+## Version
+For multi-page sites utilizing the Gulp + Handlebars build process, use ES6 syntax with Babel for pre-compilation.
+
+For single-page sites, use ES5 syntax.
 
 ## Style
-[AirBNB ES5 Styleguide](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
+For multi-page sites using ES6, follow the [AirBNB ES6 Styleguide](https://github.com/airbnb/javascript)
 
-[AirBNB ES6 Styleguide](https://github.com/airbnb/javascript)
-
-**Should we be using ES6 and ESLint? Babel for pre-processor? Or should we just stick with ES5 for now?**
+For single-page sites using ES5, follow the [AirBNB ES5 Styleguide](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)

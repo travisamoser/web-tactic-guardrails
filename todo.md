@@ -1,8 +1,7 @@
 # To Do
 
-- get help with JS guardrails
-- get help with Git guardrails
-- Confirm appropriate styles and settings for EditorConfig
-- HTMLHint config file
-- CSSLint config file
-- JSHint or ESLint config file
+- ask Andy to review Git and JS standards
+- sync Handlebars POC with this documentation
+  - HTMLHint config file
+  - CSSLint config file
+  - JSHint and ESLint config file
