@@ -6,7 +6,6 @@
 - White space is used meaningfully
 - No commented-out code
 - Passes HTMLhint tests
-- Inline styles are generally not used
 - Document language is specified
 - Character encoding is specified and immediately after `<head>` tag
 - Unaccessible viewport attributes are avoided

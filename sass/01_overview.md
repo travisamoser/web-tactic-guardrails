@@ -1,7 +1,7 @@
 # Sass
 Sass should generally follow [Sass Guidelines](https://sass-guidelin.es). I've outlined general guidelines and exceptions here. See the [Sass Guidelines](https://sass-guidelin.es) for more details.
 
-These guidelines can be enforced by adding [SCSS-Lint](https://github.com/brigade/scss-lint) to the build process. *Insert config file modeled after [the one in Sass Guidelines](https://sass-guidelin.es/#scss-lint).
+Many of these guidelines are enforced by [SASS-Lint](https://www.npmjs.com/package/sass-lint). See the Handlebars POC for configuration.
 
 ## Syntax and formatting
 Adding to the CSS guidelines, we want to pay attention to:

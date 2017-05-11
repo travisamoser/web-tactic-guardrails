@@ -8,12 +8,9 @@ Roughly, we want:
 - no commented-out code.
 
 ## Linting
-HTML code should be linted against [HTMLHint](https://www.npmjs.com/package/htmlhint). This package should be incorporated into the build process. (Link to HTMLHint config file)
+HTML code is linted by [HTMLHint](https://www.npmjs.com/package/htmlhint). See the Handlebars POC for configuration.
 
 In addition to HTMLHint, the following standards should be followed. Source: [Linting HTML using CSS](https://bitsofco.de/linting-html-using-css/)
-
-## Avoid inline styles
-Don't use inline styles. They are difficult to maintain and make responsive design difficult.
 
 ## Specify document language
 Specify a document language with the `<html>` tag's `lang` attribute:

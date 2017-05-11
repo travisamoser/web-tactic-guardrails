@@ -1,13 +1,19 @@
 # HTML
 Use HTML entities
- - finds non-HTML entity versions of special characters
+- finds non-HTML entity versions of special characters
    - `[“”‘’°†‡®©™‹›«»⟨⟩⟪⟫❮❯]`
 
+## HTML hint rules to ignore
+- [tag-self-close](https://github.com/yaniswang/HTMLHint/wiki/Tag-self-close)
+
 # CSS
- - NPM package to remove unused CSS classes?
- - clarify ruleset. Put background at end?
- - attach media queries to linked stylesheets?
-   - mixin method?
+- NPM package to remove unused CSS classes?
+- clarify ruleset. Put background at end?
+- attach media queries to linked stylesheets?
+  - mixin method?
+
+## SASS lint rules to ignore
+- so many rules. Just start using it and adjust rules as we go
 
  # Git
 - Lead dev has to accept pull requests. The lead dev does a code review before accepting pull request
@@ -20,7 +26,7 @@ Use HTML entities
 
 # JS
  - ES6 + Babel as part of build process
- - ESLint + JSHint
+ - ESLint
 
 # Dustin
  - incorporate linters in build

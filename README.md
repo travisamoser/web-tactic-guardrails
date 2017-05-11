@@ -25,7 +25,7 @@ The `editorconfig` file enforces the following rules:
 - trim trailing whitespace;
 - tabs (not spaces) for indentation by default;
 - indent size of 2;
-- markdown, `package.json`, and `travis.yml` files have an override of spaces for indentation.
+- markdown, `package.json`, and `.yml` files have an override of spaces for indentation.
 
 ### Commented-Out Code
 Don't commit commented-out code that you are "saving just in case." That's what version control is for. If you need it, you can just pull your old code from the repo's history.
@@ -68,4 +68,4 @@ Keep build processes simple and easy to get up and running. Your project should 
 4. Read your `readme.md` file to see what commands to run
 4. Then run the appropriate command to build the project. All appropriate files should be watched and rebuilt on change automatically.
 
-*Link to handlebars POC build
+See the Handlebars POC for the preferred build process.

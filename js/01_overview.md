@@ -10,7 +10,7 @@ Roughly, we want:
 - no dead code (unused code).
 
 ## Linting
-JavaScript files should be linted with [JSHint](https://www.npmjs.com/package/jshint) and [ESLint](https://www.npmjs.com/package/eslint) as an integrated part of the site build process. See the JSHint and ESLint configuration files for recommended settings. *Add links to config files
+JavaScript files should be linted with [ESLint](https://www.npmjs.com/package/eslint) as an integrated part of the site build process. See the Handlebars POC for configuration.
 
 ## Version
 For multi-page sites utilizing the Gulp + Handlebars build process, use ES6 syntax with Babel for pre-compilation.

@@ -2,7 +2,7 @@
 Use a Sass preprocessor (SCSS syntax) to buid your CSS. See the [Sass section](sass/01_overview.md) for details on the Sass guardrails.
 
 ## Linting
-CSS files should be linted with [CSSLint](https://www.npmjs.com/package/csslint) as an integrated part of the site build process. See the CSSLint configuration file for recommended settings. *Add config file
+CSS files should be are not linted after compilation. CSS code is linted pre-compilation by [SASS-Lint](https://www.npmjs.com/package/sass-lint).
 
 ## Syntax and formatting
 Roughly, we want:
