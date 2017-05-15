@@ -1,3 +1,20 @@
+# From meeting on 5/12/17
+EditorConfig
+- remove indent_size and let user settings control that?
+
+Commenting code section?
+
+HTML
+ - Reword "Avoid blocking parsing with JS files"
+
+CSS
+ - don't use transition all (may be in the linter)
+
+Images
+ - images are optimized in build
+ - remove reference to CrownPeak
+ - orphan check in build process?
+
 # HTML
 Use HTML entities
 - finds non-HTML entity versions of special characters

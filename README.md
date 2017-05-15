@@ -7,11 +7,13 @@ Leave your code in the state you would have others leave their code for you.
 
 ## General formatting
 
-### Tabs, not Spaces
+### Indentation
 Use tabs instead of spaces. Tabs have a few advantages.
-- They result in marginally lower file size (one bit instead of 2 or 4)
+- They result in marginally lower file size (one character instead of 2 or 4)
 - Their apparent width can be adjusted based on user preferences (they can appear to be the equivalent of 2 or 4 spaces)
 - They require less key presses to navigate around a file (one hit of the arrow key instead of 2 or 4).
+
+Indent children only one level more (not two) than their parent. If you prefer a wider tab style (for example you prefer the visual equivalent of 4 spaces instead of 2) don't hit the tab key twice. Instead adjust your code editor's style so that one tab is visually equivalent to four spaces. This will maintain consistent indentation across developers despite differences in visual preferences.
 
 ### Editor Config File
 Each project includes an `.editorconfig` to keep the project formatting consistent.
@@ -38,6 +40,12 @@ For CSS, SASS, and JS files, lines should be 80-characters wide or less. For HTM
 
 ### Minification
 Generally files should be minified to remove whitespace resulting in reduced file size. Code should not be obfuscated or compressed in such a way as to modify the code. In the final build, CSS and JS files should be minified and (where it makes sense) combined. HTML files should be minified in the final build. This should be a part of the build process--not done manually.
+
+## Code Comments
+1. Avoid obvious comments. Don't insult the reader's intelligence
+2. Use a consistent style
+3. Update comments when you update the code
+4. Write your code so that it is as self-evident as possible. The code itself should tell **what** it's doing while the comments should tell **why** it's doing it.
 
 ## Topics
 

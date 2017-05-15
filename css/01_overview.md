@@ -182,6 +182,33 @@ a:hover {
 }
 ```
 
+## Avoid transitioning `all`
+Transitioning `all` properties can lead to unexpected results and may cause performance issues. It's better to be explicit about what properties should be transitioned.
+```css
+/* Yep */
+button {
+	color: #fff;
+	background-color: #428bca;
+	transition: 0.2s ease-in-out;
+	transition-property: color, background-color;
+}
+button:hover {
+	color: #eee;
+	background-color: #3071a9;
+}
+
+/* Nope */
+button {
+	color: #fff;
+	background-color: #428bca;
+	transition: all 0.2s ease-in-out;
+}
+button:hover {
+	color: #eee;
+	background-color: #3071a9;
+}
+```
+
 ## Code Smells
 > How can you tell if your CSS code smells? What are the signs that the code is sub-optional, or that the developer hasn’t done a good job? What do you look for in the code to determine how good or bad it is?
 

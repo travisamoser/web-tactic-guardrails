@@ -59,8 +59,8 @@ Since you are using the HTML5 doctype, closing void elements is unnecessary. Voi
 <link href="/_assets/css/main.css" />
 ```
 
-## HTML Entities
+## HTML entities
 Use HTML entities for reserved characters. To easily find characters that need to be replace with entities, you can use a regex search like `[“”‘’°†‡®©™‹›«»⟨⟩⟪⟫❮❯]`
 
-## Avoid blocking parsing with JS files
+## Avoid JS files that block parsing
 Linked JS files should not unnecessarily block parsing the rest of the page. `asyc` and `defer` attributes should be used where appropriate. See more info in [Asynchronous vs Deferred JavaScript](https://bitsofco.de/async-vs-defer/)

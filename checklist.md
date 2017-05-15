@@ -5,6 +5,7 @@
 - Nested tags are indented consistently
 - White space is used meaningfully
 - No commented-out code
+- Code includes appropriate comments
 - Passes HTMLhint tests
 - Document language is specified
 - Character encoding is specified and immediately after `<head>` tag
@@ -22,6 +23,7 @@
 - Indented with tabs as opposed to spaces
 - Indentation is consistent
 - Lines are mostly 80-characters wide or less
+- Code includes appropriate comments
 - CSS rules are written in proper format
 - Rules are properly written, multi-line
 - No commented-out code
@@ -34,6 +36,7 @@
 - Line-heights are unitless
 - Images linked in CSS files are scoped to appropriate media queries
 - Transitions are used on hover and focus of links and buttons
+- Transition `all` is not used
 - "Code Smells" are not detected
   - Undoing Styles
   - Magic Numbers
@@ -56,6 +59,7 @@
 - Indented with tabs as opposed to spaces and indentation is consistent
 - no commented-out code
 - Lines are mostly 80-characters wide or less
+- Code includes appropriate comments
 - JS files are combined and minified in the final build
 
 ## Images
