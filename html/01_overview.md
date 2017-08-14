@@ -59,8 +59,17 @@ Since you are using the HTML5 doctype, closing void elements is unnecessary. Voi
 <link href="/_assets/css/main.css" />
 ```
 
-## HTML entities
-Use HTML entities for reserved characters. To easily find characters that need to be replace with entities, you can use a regex search like `[“”‘’°†‡®©™‹›«»⟨⟩⟪⟫❮❯]`
+## Special characters
+If using HTML5 and UTF-8 character encoding, it is preferable to use characters instead of named character references whenever possible. This increases readability of the text within the code and decreases file size. However, for the following special characters, using the named character references is required in HTML:
+- `&lt; (<)`
+- `&gt; (>)`
+- `&amp; (&)`
+
+It is also required to use named character references for the single and double quote characters when used inside of attribute text surrounded with the same characters.
+- `&quote; (")`
+- `&apos; (')`
+
+Source: https://www.w3.org/International/questions/qa-escapes#use
 
 ## Avoid JS files that block parsing
 Linked JS files should not unnecessarily block parsing the rest of the page. `asyc` and `defer` attributes should be used where appropriate. See more info in [Asynchronous vs Deferred JavaScript](https://bitsofco.de/async-vs-defer/)
